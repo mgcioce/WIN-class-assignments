@@ -1,0 +1,4 @@
+Chapter 1 quiz answer:
+
+The LHS lookups will be c in line 6, a in line 1, and b in line 2;
+The RHS lookups will be foo in line 6, a in line 2, and a and b in line 3;

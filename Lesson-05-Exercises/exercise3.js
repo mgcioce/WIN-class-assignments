@@ -12,58 +12,44 @@
 // 4. Automatically pause the slideshow if it gets to the end of the photolist while playing.
 
 
-// let slideShow = {
-//     photoList: ['pic1.jpg','pic2.jgp','pic3.jpg','pic4.jpg','pic5.jpg'],
-//     currentPhotoIndex: 0,
-//     playInterval: 0,
-//     nextPhoto: function(){
-//         if (this.currentPhotoIndex == this.photoList.length - 1) {
-//             //console.log("End of slideshow");
-//             return false;
-//         } else {
-//             console.log(this.photoList[++this.currentPhotoIndex]);
-//             return true;
-//         }
-//     },
-//     prevPhoto: function(){
-//         if (this.currentPhotoIndex == 0) {
-//             console.log("beginning of slideshow");
-//         } else {
-//             console.log(this.photoList[--this.currentPhotoIndex]);
-//         }
-//     },
-//     getCurrentPhoto: function() {
-//         return this.photoList[this.currentPhotoIndex];
-//     },
-//     play: function(interval) {
-//         if (interval <= 1000 || typeof interval == 'undefined' || interval == null) {
-//             this.playInterval = 2000;
-//         } else {
-//             this.playInterval = interval;
-//         }
-//         let asyncPlay = function() {
-//             do{
-//                 console.log(this.getCurrentPhoto());
-//             }while(this.nextPhoto())
-//         }
-//         asyncPlay = asyncPlay.bind(this);
-//         setTimeout(asyncPlay,this.playInterval);
-
-//     } 
-// }
-
-// slideShow.play();
-
-let myObject = {
-    state: 0,
-    currentState: function(){
-        return this.state;
-    }
-};
-
-for (let i = 0; i < 4; i++) {
-    setTimeout( () => {
-        console.log(myObject.currentState());
-        myObject.state++;
-    },2000);
+let slideShow = {
+    photoList: ['pic1.jpg','pic2.jgp','pic3.jpg','pic4.jpg','pic5.jpg'],
+    currentPhotoIndex: 0,
+    playInterval: 0,
+    nextPhoto: function(){
+        if (this.currentPhotoIndex == this.photoList.length - 1) {
+            console.log("End of slideshow");
+        } else {
+            ++this.currentPhotoIndex;
+        }
+    },
+    prevPhoto: function(){
+        if (this.currentPhotoIndex == 0) {
+            console.log("beginning of slideshow");
+        } else {
+            --this.currentPhotoIndex;
+        }
+    },
+    getCurrentPhoto: function() {
+        return this.photoList[this.currentPhotoIndex];
+    },
+    play: function(interval) {
+        if (interval <= 1000 || typeof interval == 'undefined' || interval == null) {
+            this.playInterval = 2000;
+        } else {
+            this.playInterval = interval;
+        }
+        function asyncPlay() {
+            console.log(this.getCurrentPhoto());
+            this.nextPhoto();
+        }
+        asyncPlay = asyncPlay.bind(this);
+        id = setInterval(asyncPlay,this.playInterval);
+        setTimeout( () => {
+            clearInterval(id);
+        }, this.playInterval * (this.photoList.length + 1) );
+    } 
 }
+
+slideShow.play();
+

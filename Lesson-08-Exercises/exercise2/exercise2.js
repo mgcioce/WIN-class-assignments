@@ -21,7 +21,7 @@ lis = document.querySelectorAll('li');
 lis.forEach( (node) => {
     node.remove();
 })
-array = ['protein powder', 'muscle milk', 'power bars'];
+let array = ['protein powder', 'muscle milk', 'power bars'];
 array.forEach( (text) => {
     let newElement = document.createElement('li');
     newElement.textContent = text;
@@ -31,7 +31,9 @@ array.forEach( (text) => {
     ul.appendChild(newElement);
 });
 
-
+function (text) {
+    
+}
 
 
 

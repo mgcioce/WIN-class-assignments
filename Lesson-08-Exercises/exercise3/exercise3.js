@@ -18,7 +18,6 @@ toDoEnter.addEventListener('keypress', (event) => {
         let listElements = ul.childNodes;
         listElements.forEach( (node) => {
             node.addEventListener('click', (event) => {
-                console.log("I work");
                 node.style = 'text-decoration: line-through';
                 setTimeout(() => {
                     node.remove();

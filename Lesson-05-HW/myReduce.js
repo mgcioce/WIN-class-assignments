@@ -3,15 +3,17 @@
 // init will hold the sum, function will be used to calculate
 //and return the next sum, and array holds the values to add
 function myReduce(array, func, init) {
-    if (arguments[3] == 0) {
-        return func(init,array[arguments[3]],arguments[3],array);
-    } else {
-        return myReduce(array,func,func(init,array[arguments[3]],arguments[3],array),arguments[3]-1);
-    }     
+    return (function innerReduce(array,func,init,index) {
+        if (index == 0) {
+            return func(init,array[index],index,array); 
+        } else {
+            return innerReduce(array,func,func(init,array[index-1],index-1,array),index-1);
+        }
+    })(array,func,init,0);    
 }
 
 let a = [1,2,3,4,5];
 
 console.log(myReduce(a,(a,c,i,arr) => {
     return a + c;
-},0,a.length-1));
+},0));

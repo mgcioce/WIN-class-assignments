@@ -154,6 +154,9 @@ $('input[value="posts and comments"]').on('click', (event)=> {
                 ul.id = postId;
                 ul.innerHTML = HTMLelements.join('');
                 $(css).append(ul);
+                let commentsDiv = document.createElement('div');
+                commentsDiv.id = `comments${postId}`;
+                $(css).append(commentsDiv);
                 let commentsButton = document.createElement('input');
                 commentsButton.type = 'button';
                 commentsButton.value = 'comments';
@@ -161,14 +164,27 @@ $('input[value="posts and comments"]').on('click', (event)=> {
                 commentsButton.addEventListener('click', (event) => {
                     GET(`https://jsonplaceholder.typicode.com/comments?postId=${postId}`,
                         (data,status,xhr) => {
-                            let objects = parseObjects(data);
-                            appendData(objects,`ul#${postId}`, (obj,css) => {
-                                obj.forEach( (object) => {
-                                    let HTMLelements = Object.keys(object).map( (key) => {
-                                        return `<li>${key}: ${object[key]}</li>`;
-                                    });
+                            console.log($(`div#comments${postId}`).children())
+                            if ($(`div#comments${postId}`).children().length == 0) {
+                                let objects = parseObjects(data);
+                                appendData(objects,`div#comments${postId}`, (obj,css) => {
+                                    obj.forEach( (object) => {
+                                        let HTMLelements = Object.keys(object).map( (key) => {
+                                            return `<li>${key}: ${object[key]}</li>`;
+                                        });
+                                        let ul = document.createElement('ul');
+                                        ul.innerHTML = HTMLelements.join('');
+                                        $(css).append(ul);
+                                    })
                                 })
-                            })
+                            } else {//if the comment div is not empty
+                                if ($(`div#comments${postId}`).css('display') == 'block') {
+                                    $(`div#comments${postId}`).css('display','none');
+                                } else {
+                                    $(`div#comments${postId}`).css('display','block');
+                                }
+                            }
+                            
                         });
                     
                 });

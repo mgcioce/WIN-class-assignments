@@ -19,51 +19,88 @@
 // 	- A search box that filters the photos by title as the user types
 // 	- A back link to the user homepage
 
-let submitButton = document.querySelector('input[value="Submit"]');
-submitButton.addEventListener('click',(event) => {
-    let username = document.querySelector('input[placeholder="username"]').value;
-    let myPromise = new Promise((resolve,reject) => {
-        $.get(`http://jsonplaceholder.typicode.com/users?username=${username}`, (data,status,xhr) => {
-            if (data.length > 0) {
-                resolve(data[0]);
+function createHTMLStrings(array) {
+    let returnString = '';
+    array.forEach( (element) => {
+        HTMLStrings = Object.keys(element).map( (key) => {
+            if (typeof element[key] == 'object' && !Array.isArray(element[key])) {
+                 return `<li>${createHTMLStrings([element[key]])}</li>`;
             } else {
-                reject('you done messed up A A Ron');
+                return `<li>${key}: ${element[key]}</li>`;
             }
-        });
+        })
+        HTMLStrings = `<ul>${HTMLStrings.join('')}</ul>`;
+        returnString 
     });
-    myPromise.then((data) => {
-        document.querySelector('div.login').setAttribute('display', 'none');
-        let userPage = document.createElement('div');
-        userPage.className = 'user-page';
-        document.querySelector('body').append(userPage);
-        let id = null;
-        let HTMLElements = Object.keys(data).map( (key) => {
-            if (key == 'id'){
-                id = data[key];
-            }
-            return `<li>${key}: ${data[key]}</li>`;
-        });
-        let ul = document.createElement('ul');
-        ul.innerHTML = HTMLElements.join('');
-        document.querySelector('div[class="user-page"]').append(ul);
-        return new Promise((resolve,reject) => {
-            //do another get request for the post data for the user.
-            $.get(`http://jsonplaceholder.typicode.com/posts?userId=${id}`, (data,status,xhr) => {
-                if (data.length > 0){
-                    resolve(data);
-                } else {
-                    reject('That fucked up');
-                }
-            });
-        });
-    },(err) => {
-        let errorText = document.createElement('p');
-        errorText.textContent = err + "\nNo user found: please try again";
-        document.querySelector('div.login').append(errorText);
+    return returnString;
+}
+
+new Promise( (resolve,reject) => {
+    $.get('http://jsonplaceholder.typicode.com/users', (data,status,xhr) => {
+        if (data.length > 0) {
+            resolve(data);
+        } else {
+            reject('we got a problem here');
+        }
     }).then( (success) => {
-        console.log(success);
+        let HTMLStrings = createHTMLStrings([success[0]]);
+        console.log(HTMLStrings);
     }, (failure) => {
         console.log(failure);
-    }) 
-});
+    })
+})
+
+
+
+
+
+
+// let submitButton = document.querySelector('input[value="Submit"]');
+// submitButton.addEventListener('click',(event) => {
+//     let username = document.querySelector('input[placeholder="username"]').value;
+//     let myPromise = new Promise((resolve,reject) => {
+//         $.get(`http://jsonplaceholder.typicode.com/users?username=${username}`, (data,status,xhr) => {
+//             if (data.length > 0) {
+//                 resolve(data);
+//             } else {
+//                 reject('you done messed up A A Ron');
+//             }
+//         });
+//     });
+//     myPromise.then((data) => {
+//         document.querySelector('div.login').setAttribute('display', 'none');
+//         let userPage = document.createElement('div');
+//         userPage.className = 'user-page';
+//         document.querySelector('body').append(userPage);
+//         let id = null;
+//         let HTMLElements = Object.keys(data).map( (key) => {
+//             if (key == 'id'){
+//                 id = data[key];
+//             }
+//             return `<li>${key}: ${data[key]}</li>`;
+//         });
+//         let ul = document.createElement('ul');
+//         ul.innerHTML = HTMLElements.join('');
+//         document.querySelector('div[class="user-page"]').append(ul);
+//         return new Promise((resolve,reject) => {
+//             //do another get request for the post data for the user.
+//             $.get(`http://jsonplaceholder.typicode.com/posts?userId=${id}`, (data,status,xhr) => {
+//                 if (data.length > 0){
+//                     resolve(data);
+//                 } else {
+//                     reject('That fucked up');
+//                 }
+//             });
+//         });
+//     },(err) => {
+//         let errorText = document.createElement('p');
+//         errorText.textContent = err + "\nNo user found: please try again";
+//         document.querySelector('div.login').append(errorText);
+//     }).then( (success) => {
+//         console.log(success);
+//         createHTMLStrings(success);
+//     }, (failure) => {
+//         console.log(failure);
+//     }); 
+// });
 

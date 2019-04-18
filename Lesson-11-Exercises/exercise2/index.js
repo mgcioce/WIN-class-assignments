@@ -9,16 +9,18 @@
 // 10. Have your application fetch data every 3 seconds.
 const Moment = require('moment');
 const Request = require('request');
-console.log('I exist');
-let options = {
-    uri: 'http://jsonplaceholder.typicode.com/posts/1',
-    headers: {
-        'User-Agent': 'Request-Promise'
-    },
-}
-rp(options).then( (success) => {
-    console.log(success);
-}, (failure) => {
-    console.log(failure);
-})
+const request_promise = require('request-promise');
+
+
+setInterval(() => {
+    request_promise.get('http://jsonplaceholder.typicode.com/posts/1',(err,response,body) => {
+        console.log(Moment().format('h:mm:ss a'));
+        //process(response);
+    }).then( (success) => {
+        console.log(success);
+    }, (fail) => {
+        console.log(fail);
+    })
+},3000);
+
 

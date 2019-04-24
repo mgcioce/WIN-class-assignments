@@ -1,0 +1,22 @@
+{
+  "name": "webpackpractice",
+  "version": "1.0.0",
+  "description": "this is a practice thing using Brain.js to do stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgcioce/WIN-class-assignments.git"
+  },
+  "author": "Mike Cioce",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mgcioce/WIN-class-assignments/issues"
+  },
+  "homepage": "https://github.com/mgcioce/WIN-class-assignments#readme",
+  "dependencies": {
+    "brain.js": "^1.6.1"
+  }
+}

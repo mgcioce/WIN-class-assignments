@@ -19,36 +19,57 @@
 // 	- A search box that filters the photos by title as the user types
 // 	- A back link to the user homepage
 
-function createHTMLStrings(array) {
-    let returnString = '';
-    array.forEach( (element) => {
-        HTMLStrings = Object.keys(element).map( (key) => {
-            if (typeof element[key] == 'object' && !Array.isArray(element[key])) {
-                 return `<li>${createHTMLStrings([element[key]])}</li>`;
-            } else {
-                return `<li>${key}: ${element[key]}</li>`;
-            }
-        })
-        HTMLStrings = `<ul>${HTMLStrings.join('')}</ul>`;
-        returnString 
-    });
-    return returnString;
+//function definitions
+function createUnorderedList(object) {
+    let liElementStrings = Object.keys(object).map( (key) => {
+        if (typeof object[key] == 'object' && !Array.isArray(object[key])) {
+            return `<li>${createUnorderedList(object[key])}</li>`;
+        } else {
+            return `<li>${key}: ${object[key]}</li>`;
+        }
+    })
+    return `<ul>${liElementStrings.join('')}</ul>`;
 }
 
-new Promise( (resolve,reject) => {
-    $.get('http://jsonplaceholder.typicode.com/users', (data,status,xhr) => {
-        if (data.length > 0) {
-            resolve(data);
-        } else {
-            reject('we got a problem here');
-        }
-    }).then( (success) => {
-        let HTMLStrings = createHTMLStrings([success[0]]);
-        console.log(HTMLStrings);
-    }, (failure) => {
-        console.log(failure);
-    })
+function createHTMLStrings(array) {
+
+    array = array.map((element) => {
+        return createUnorderedList(element);
+    });
+    return array;
+}
+
+function getUserInput() {
+    return document.querySelector('input[placeholder="username"]').value;
+}
+
+//html elements
+let submitButton = document.querySelector('input[value="Submit"]');
+
+//events
+//should i put event listeners in a promise? How should i handle these other than a callback?
+submitButton.addEventListener('click',(event) => {
+    let ui = getUserInput();
+    new Promise( (resolve,reject) => {
+        $.get(`http://jsonplaceholder.typicode.com/users?username=${ui}`, (data,status,xhr) => {
+            if (data.length > 0) {
+                resolve(data);
+            } else {
+                reject('we got a problem here');
+            }
+        }).then( (success) => {
+            let HTMLStrings = createHTMLStrings(success);
+            let userPage = document.createElement('div');
+            userPage.id = 'userPage';
+            userPage.innerHTML = HTMLStrings;
+            document.querySelector('div.login').style.setProperty('display','none');
+            document.querySelector('body').appendChild(userPage);
+        }, (failure) => {
+            console.log(failure);
+        })
+    })  
 })
+
 
 
 

@@ -1,0 +1,50 @@
+/**
+*   Name: Mike Cioce
+*   Date: 5/2/19
+*   file: React + Redux quiz
+*/
+
+1) Which of the following is a library used in Redux?
+    D. none of the above
+
+2) which of the following is the correct syntax to install redux?
+    C. npm install redux;
+
+3) Which of the terms below is defined by a plain js object that describes what has happened?
+    B. action
+
+4) what does this code show?
+    A. state of a todo app
+
+5) which of hte following is NOT the funciton of a reducer?
+    D. none of the above
+
+6) what are the three main concepts of redux?
+    D. state, action, reducer
+
+7) which principle of redux does the following code indicate?
+    C. a single source of truth
+
+8) In which principles of redux are pure reducers used?
+    D. Changes are made with pure functions
+
+9) which of the following is not a benefit of redux?
+    B. excellent organization
+
+10) which of the following entities cannot be  combined with redux?
+    D. None of the above
+
+11) everything in react is a (blank)
+    D. component
+
+12) What is reactJS?
+    A. user interface framework
+
+13) (blank) is the directory where react components are saved
+    A. inside js/components/
+
+14) (blank) is the number of elements a React component returns
+    A. 1
+
+15) what is the use of a webpack command?
+    B. transpiling all javascripts down into one.

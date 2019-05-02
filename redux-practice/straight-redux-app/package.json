@@ -1,0 +1,14 @@
+{
+  "name": "straight-redux-app",
+  "version": "1.0.0",
+  "description": "this is a practice app for using redux that only practices using redux to change states and such",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Mike Cioce",
+  "license": "ISC",
+  "dependencies": {
+    "redux-starter-kit": "^0.5.1"
+  }
+}

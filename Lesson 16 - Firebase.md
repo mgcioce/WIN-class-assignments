@@ -90,6 +90,44 @@ writeData = e => {
 
 ```
 
+```javascript 
+resetImage = e => {
+    e.preventDefault();
+    database.ref("image/").set(null, function(error) {
+      if (error) {
+        alert("That didn't work, please try again.");
+      } else {
+        console.log("Successful submit!");
+      }
+    });
+  };
+```
+
+```javascript 
+changeSpeed = e => {
+    const speed = e.target.value;
+    e.preventDefault();
+    database.ref("speed/").set(speed, function(error) {
+      if (error) {
+        alert("That didn't work, please try again.");
+      } else {
+        console.log("Successful submit!");
+      }
+    });
+  };
+```
+
+```javascript
+<img
+  src={this.state.image}
+  alt="logo"
+  style={{
+    animation: `App-logo-spin infinite ${this.state.speed}ms linear`,
+    height: "40vmin",
+    pointerEvents: "none"
+  }}
+```
+
 ## Promises
 
 To know when your data is committed to the Firebase Realtime Database server, you can use a Promise. Both `set()` and `update()` can return a Promise you can use to know when the write is committed to the database.

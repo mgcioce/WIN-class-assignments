@@ -61,7 +61,7 @@ class Spinny extends React.Component {
         })
     }
 
-    resetState() {
+    resetState(event) {
         this.setState({
             image: logo,
             slider: 2,

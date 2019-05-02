@@ -1,0 +1,146 @@
+/**
+*   File: test.txt
+*   Name: Mike Cioce
+*   Date: 4/29/19
+*/
+
+1) Define Semantic HTML:
+
+I'm not sure what Semantic HTML is to be honest. I'm sure a cursory google search would provide 
+insight.
+
+2) What do Data Attributes in HTML do?:
+
+I'm not 100% sure what a data attribute is, but if I assume it's what I know to be an attribute, then
+attributes are used to provide css details to the html tag, along with whatever css is referenced by
+default based on the browser being used.
+
+3)What is the CSS box model?
+
+The CSS box model defines how html elements are rendered with respect to one another on a web page.
+The box model consists of 4 areas, each in concentric squares around each other: content, padding, 
+border, and margins
+
+4) What is specificity in CSS?
+
+Specificity defines the html elements that a css definition applies to. It refers to the 
+child parent relationships of HTML tags and also is dependent on tag name, class name, and id.
+
+5)What are units of measurement in CSS are used to define height and width specifications on 
+
+HTML element box models. you can use pixels (px), which is literally pixels rendered on a screen,
+percentage of the page, which references the # of pixels normalized by the total # of pixels that 
+can be rendered on a browser window. There are some other ones but I'm not 100% sure what they are.
+There is one that can determine size and position based on a scaling coefficient with respect to a 
+defined pixel value (i think that one is referenced by em).
+
+6)What is a CSS media query and what is it used for?
+
+A CSS media query (i'm guessing) is a reference to a remote or local computer to GET a media source,
+such as a picture or sound file.
+
+7) What is the difference between padding and margin?
+
+Padding is an area surrounding the content area in the box model. It is a spacing area that separates
+the content and the border. The margin is the outermost box of the box model. It defines the 
+spacing between an HTML element and other HTML elements rendered on the page (with some exceptions).
+
+8) = vs == vs === ?
+
+the leftmost operator is the assignment operator. It takes whatever is the on the right side 
+of it and stores that value in whatever variable is on the left side of the operator. The next 
+two are comparison operators. The first is a loose equality operator, which compares the value of 
+the operands. The next is a strict equality operator, which checks both the data type and value of 
+the operands.
+
+9) explain event bubbling:
+
+I have no idea what this is.
+
+10)What are the primitive data types of JS?
+
+number,string,boolean,undefined,NaN,null
+
+11) Undefined vs Null
+
+Null is a special value that essentially puts a placeholder value in the memory location. 
+It is not anything but itself. Undefined is what is stored by default in a memory location if 
+a value is not assigned to a variable. You have to specify null, while undefined will be there by 
+default.
+
+12) Write code to achieve the following:
+
+    let myStr = "hello world!";
+    let temp = "";
+    for (let i = myStr.length - 1; i >= 0; i--) {
+        temp.concat(myStr[i]);
+    }
+    myStr = temp;
+    console.log(myStr);
+
+13)What is the output? Why?
+
+    console.log("one");
+    setTimeout( function() {
+        console.log("two");
+    }, 0);
+    console.log("three");
+
+The output will be:
+one
+three
+two
+
+The reason has to do with the javascript event loop. In short, the two console.logs outside of 
+the setTimeout function will execute first, because there will be a 10ms delay, a message won't
+be added to the event loop for 10ms. by that time the other two functions will be in the 
+call stack and be executing. The call stack has to execute before a message can be resolved in the 
+event queue, which will put the final console log in the call stack and execute.
+
+14)debug this code:
+
+    console.log("start");
+    for (var i=0; i < 5; i++);
+    setTimeout( function() {
+        console.log(i);
+    }, 0);
+    console.log("end");
+
+answer: 
+
+    console.log("start");
+    for (var i=0; i < 5; i++) {
+        setTimeout( function() {
+            console.log(i);
+        }, 0);
+    }
+    console.log("end");
+
+
+output:
+start
+end
+0
+1
+2
+3
+4
+
+
+15) For a given array, sort in ascending order, remove duplicates, find numbers greater than a 
+particular number.
+
+function sortArray(arrayToBeSorted) {
+    let sortedArray = [];
+    sortedArray[0] = arrayToBeSorted[0];
+    for (let i = 0; i < arrayToBeSorted.length - 1; i++) {
+       let j = i + 1;
+       next = arrayToBeSorted[j];
+       sortedArray[i]
+       compare(sortedArray, i);
+    }
+}
+
+function compare(array,index) {
+    
+}

@@ -1,4 +1,5 @@
-import * as Redux from './node_modules/';
+import * as Redux from 'redux-starter-kit';
+
 
 function create_NEW_VALUES_action(values) {
     return {
@@ -59,4 +60,3 @@ inputForm.addEventListener('submit', (event) => {
     inputs.adjective = event.target.elements.adjective.value;
     p.innerHTML = createMadlib(inputs);
 })
-

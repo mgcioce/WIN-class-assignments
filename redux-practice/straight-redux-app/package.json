@@ -9,6 +9,7 @@
   "author": "Mike Cioce",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.16.4",
     "redux-starter-kit": "^0.5.1"
   }
 }

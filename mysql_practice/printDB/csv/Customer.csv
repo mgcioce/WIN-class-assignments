@@ -1,0 +1,14 @@
+customer_id,customer_first_name,customer_last_name,customer_address_house_number,customer_address_street,customer_address_housing_unit,customer_address_city,customer_address_state,customer_address_zip,customer_phone_number
+1000,Cora, Blanca,1555, Seminole Ct., ,Charlotte,NC,28210,704/552.1810
+1100,Yash, Reed,878, Madison Ave., ,Greensboro,NC,27407,336/316-5434
+1200,John, Mills,4200, Olive Ave., ,Columbia,SC,29206,803/432.6225
+1300,David, Cox,608, Old Post Rd., ,Decatur,GA,30030,404/243.7379
+1400,Tina, Evans,235, Easton Ave., ,Jacksonville,FL,32221,904/992-7234
+1500,Will, Allen,2508, W. Shaw Rd., ,Raleigh,NC,27542,919/809.2545
+1600,James, Boyd,200, Pembury Ln., ,Columbia,SC,29206,803/432-7600
+1700,Will, Parsons,4990, S. Pine St., ,Raleigh,NC,27545,919/355/0034
+1800,Walter, Kelly,1200, Little St., ,Columbia,SC,29206,803/432-1987
+1900,Ann, Damian,7822, N. Ridge Rd., ,Jacksonville,FL,32216,904/725-4672
+2000,Grace, Hull,4090, Caldweld St., ,Charlotte,NC,28205,704/365.7655
+2100,Jane, Brown,3320, W. Main St., ,Charlotte,NC,28210,704/372/9000
+2200,Betty, Draper,1600, Sardis Rd., ,Sarasota,FL,32441,918/941-9121

@@ -13,6 +13,7 @@ public class AsciiChars {
     public AsciiChars() {
         super();
     }
+
     public static void printNumbers()
     {
         String printOutput = "";

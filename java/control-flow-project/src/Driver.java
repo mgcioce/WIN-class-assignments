@@ -1,3 +1,4 @@
+import java.math.BigInteger;
 import java.util.Scanner;
 
 public class Driver {
@@ -47,14 +48,14 @@ public class Driver {
                         responses[i - 1] = kb.nextLine();
                         if (i != 2 && i != 5) {
                             try {
-                                int check = Integer.parseInt(responses[i-1]);
+                                BigInteger check = new BigInteger(responses[i-1]);
                             } catch (Exception e) {
                                 System.out.println("Please enter a number");
                                 good = false;
                             }
                         } else { // i is either 2 or 5
                             try {
-                                int check = Integer.parseInt(responses[i-1]);
+                                long check = Long.parseLong(responses[i-1]);
                                 System.out.println("Please enter a word or words");
                                 good = false;
                             } catch (Exception e) {
@@ -105,13 +106,12 @@ public class Driver {
 
     }
 
-    public static int numberToNumber(String num,boolean isPowerBall) {
-        int returnValue = 0;
-        returnValue = Integer.parseInt(num);
+    public static long numberToNumber(String num,boolean isPowerBall) {
+        BigInteger returnValue = new BigInteger(num).abs();
         if (isPowerBall) {
-            return (returnValue % 26) + 1;
+            return (returnValue.mod(new BigInteger("26"))).intValue() + 1 ;
         } else {
-            return (returnValue % 69) + 1;
+            return (returnValue.mod(new BigInteger("69"))).intValue() + 1;
         }
     }
 }

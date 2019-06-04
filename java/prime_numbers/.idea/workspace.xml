@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a830fc6-3d38-4b77-b670-e1373a669210" name="Default Changelist" comment="">
+    <list default="true" id="e72799bc-65e3-47de-915b-44f6336ad944" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../practice/Practice.class" beforeDir="false" afterPath="$PROJECT_DIR$/../practice/Practice.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../practice/Practice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practice/Practice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sorting-algorithms/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sorting-algorithms/Driver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sorting-algorithms/Sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sorting-algorithms/Sort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sorting-algorithms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sorting-algorithms/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sorting-algorithms/out/production/sorting-algorithms/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/../sorting-algorithms/out/production/sorting-algorithms/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sorting-algorithms/out/production/sorting-algorithms/Sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../sorting-algorithms/out/production/sorting-algorithms/Sort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sorting-algorithms/src/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sorting-algorithms/src/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sorting-algorithms/src/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sorting-algorithms/src/Sort.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,32 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Driver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Statistics.java">
+        <entry file="file://$PROJECT_DIR$/src/PrimeNumbers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="117" column="5" lean-forward="true" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Sort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="102" column="30" selection-start-line="102" selection-start-column="30" selection-end-line="102" selection-end-column="30" />
+            <state relative-caret-position="816">
+              <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -58,6 +37,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -67,16 +47,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Sort.java" />
-        <option value="$PROJECT_DIR$/src/Statistics.java" />
-        <option value="$PROJECT_DIR$/src/Driver.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/src/PrimeNumbers.java" />
+        <option value="$PROJECT_DIR$/src/PrimeNumbersTest.java" />
       </list>
     </option>
   </component>
@@ -99,12 +71,12 @@
         <subPane>
           <expand>
             <path>
-              <item name="sorting-algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sorting-algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="prime_numbers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prime_numbers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="sorting-algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sorting-algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="prime_numbers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prime_numbers" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -115,10 +87,15 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bookshelf" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -128,6 +105,14 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -141,17 +126,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Driver" />
-      <module name="sorting-algorithms" />
+  <component name="RunManager" selected="JUnit.PrimeNumbersTest.factorial">
+    <configuration name="PrimeNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PrimeNumbers" />
+      <module name="prime_numbers" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrimeNumbersTest.factorial" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prime_numbers" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PrimeNumbersTest" />
+      <option name="METHOD_NAME" value="factorial" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Driver" />
+        <item itemvalue="JUnit.PrimeNumbersTest.factorial" />
+        <item itemvalue="Application.PrimeNumbers" />
       </list>
     </recent_temporary>
   </component>
@@ -160,25 +156,55 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3a830fc6-3d38-4b77-b670-e1373a669210" name="Default Changelist" comment="" />
-      <created>1558727338025</created>
+      <changelist id="e72799bc-65e3-47de-915b-44f6336ad944" name="Default Changelist" comment="" />
+      <created>1559236554262</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1558727338025</updated>
-      <workItem from="1558727344348" duration="6564000" />
-      <workItem from="1559045456217" duration="8252000" />
-      <workItem from="1559075620129" duration="1711000" />
-      <workItem from="1559563573827" duration="3471000" />
+      <updated>1559236554262</updated>
+      <workItem from="1559236561053" duration="11464000" />
+      <workItem from="1559305233254" duration="3600000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="PrimeNumbersTest_factorial - 2019.05.30 at 16h 08m 11s.xml">
+      <configuration name="PrimeNumbersTest.factorial" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PrimeNumbersTest_factorial - 2019.05.30 at 16h 27m 11s.xml">
+      <configuration name="PrimeNumbersTest.factorial" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PrimeNumbersTest_factorial - 2019.05.30 at 16h 28m 42s.xml">
+      <configuration name="PrimeNumbersTest.factorial" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PrimeNumbersTest_factorial - 2019.05.31 at 08h 46m 58s.xml">
+      <configuration name="PrimeNumbersTest.factorial" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PrimeNumbersTest_factorial - 2019.05.31 at 08h 48m 48s.xml">
+      <configuration name="PrimeNumbersTest.factorial" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PrimeNumbersTest_factorial - 2019.05.31 at 08h 52m 14s.xml">
+      <configuration name="PrimeNumbersTest.factorial" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PrimeNumbersTest_factorial - 2019.05.31 at 08h 53m 27s.xml">
+      <configuration name="PrimeNumbersTest.factorial" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PrimeNumbersTest_factorial - 2019.05.31 at 08h 55m 04s.xml">
+      <configuration name="PrimeNumbersTest.factorial" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PrimeNumbersTest_factorial - 2019.05.31 at 09h 00m 41s.xml">
+      <configuration name="PrimeNumbersTest.factorial" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PrimeNumbersTest_factorial - 2019.05.31 at 09h 13m 39s.xml">
+      <configuration name="PrimeNumbersTest.factorial" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19998000" />
+    <option name="totallyTimeSpent" value="15064000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="1299" height="741" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26177174" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25379092" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -188,7 +214,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32843137" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30882353" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -196,7 +222,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32843137" />
+      <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -214,27 +240,20 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Sort.java">
+    <entry file="file://$PROJECT_DIR$/src/PrimeNumbersTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="102" column="30" selection-start-line="102" selection-start-column="30" selection-end-line="102" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        <state relative-caret-position="187">
+          <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Statistics.java">
+    <entry file="file://$PROJECT_DIR$/src/PrimeNumbers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="117" column="5" lean-forward="true" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
+        <state relative-caret-position="816">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
         </state>
       </provider>
     </entry>

@@ -2,6 +2,7 @@ package library.items;
 
 import library.persons.Publisher;
 
+import java.time.LocalDate;
 import java.time.Year;
 
 public class Item implements Loanable, Reservable{
@@ -12,6 +13,7 @@ public class Item implements Loanable, Reservable{
     private Publisher publisherId;
     private Year yearOfRelease;
     private String genre;
+    private LocalDate returnDate;
 
     public Item(Long itemId, String media, String title, Publisher publisherId, Year yearOfRelease,
                 String genre) {
@@ -21,6 +23,7 @@ public class Item implements Loanable, Reservable{
         this.publisherId = publisherId;
         this.yearOfRelease = yearOfRelease;
         this.genre = genre;
+        this.returnDate = null;
     }
 
     public Long getItemId() {
@@ -69,5 +72,13 @@ public class Item implements Loanable, Reservable{
 
     public void setGenre(String genre) {
         this.genre = genre;
+    }
+
+    public LocalDate getReturnDate() {
+        return returnDate;
+    }
+
+    public void setReturnDate(LocalDate returnDate) {
+        this.returnDate = returnDate;
     }
 }

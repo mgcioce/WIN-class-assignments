@@ -11,6 +11,7 @@ public class Patron {
     private String address;
     private String phoneNumber;
     private String driversLicense;
+    private double accountBalance;
 
     public Patron(Long patronId, String firstName, String lastName, LocalDate DOB,
                   String address, String phoneNumber, String driversLicense) {
@@ -22,6 +23,7 @@ public class Patron {
         this.address = address;
         this.phoneNumber = phoneNumber;
         this.driversLicense = driversLicense;
+        this.accountBalance = 0.00;
     }
 
     public Long getPatronId() {
@@ -74,5 +76,21 @@ public class Patron {
 
     public void setDriversLicense(String driversLicense) {
         this.driversLicense = driversLicense;
+    }
+
+    public double getAccountBalance() {
+        return accountBalance;
+    }
+
+    public void setAccountBalance(double accountBalance) {
+        this.accountBalance = accountBalance;
+    }
+
+    public void debit(double amount) {
+        this.accountBalance += amount;
+    }
+
+    public void credit(double amount) {
+        this.accountBalance -= amount;
     }
 }

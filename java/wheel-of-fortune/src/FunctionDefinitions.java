@@ -65,7 +65,42 @@ public class FunctionDefinitions {
             throw new InvalidInputException("The number of occurances can't be higher than the" +
                                             " number of characters in the puzzle");
         }
-        for (String s: wheel.)
+        boolean isValid = false;
+        for (String s: wheel.getWheelValues()) {
+            if (s.compareTo(value) == 0) {
+                isValid = true;
+                break;
+            }
+        }
+        if (!isValid) {
+            throw new InvalidInputException("The value does not appear on the designate wheel");
+        }
+
+        //actual function
+        boolean isVowel = false;
+        String[] vowels = {"a","e","i","o","u"};
+        for (String vowel: vowels) {
+            if (vowel.compareTo(guess) == 0) {
+                isVowel = true;
+                break;
+            }
+        }
+        if (isVowel) {
+            return -250;
+        } else { //it's a consonant
+
+            try{
+                if (value.compareTo("1000000") == 0)
+                    return 0;
+                else {
+                    return Integer.parseInt(value) * num;
+                }
+            } catch (NumberFormatException e) {
+                e.printStackTrace();
+                return 0;
+            }
+        }
+
     }
 
 }

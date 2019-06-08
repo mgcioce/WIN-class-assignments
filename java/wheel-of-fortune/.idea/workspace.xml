@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d08d869-633d-4726-a2cc-837ff0d1030b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../practice/Practice.class" beforeDir="false" afterPath="$PROJECT_DIR$/../practice/Practice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../practice/Practice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practice/Practice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/wheel-of-fortune/FunctionDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wheel-of-fortune/FunctionDefinitions.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/wheel-of-fortune/FunctionDefinitionsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wheel-of-fortune/FunctionDefinitionsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/wheel-of-fortune/Puzzle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wheel-of-fortune/Puzzle.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FunctionDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FunctionDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FunctionDefinitionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FunctionDefinitionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wheel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wheel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WheelValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WheelValues.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FunctionDefinitions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="67" column="29" lean-forward="true" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
+            <state relative-caret-position="258">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
             </state>
           </provider>
         </entry>
@@ -37,8 +39,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Puzzle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+            <state relative-caret-position="164">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#503#504#0" expanded="true" />
+                <element signature="e#559#560#0" expanded="true" />
+                <element signature="e#660#661#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -56,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FunctionDefinitionsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="204" column="82" selection-start-line="204" selection-start-column="82" selection-end-line="204" selection-end-column="82" />
+            <state relative-caret-position="3842">
+              <caret line="226" column="75" selection-start-line="226" selection-start-column="75" selection-end-line="226" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,23 +76,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/org/junit/Assert.class">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Wheel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+            <state relative-caret-position="238">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
-                <element signature="e#255#256#0" expanded="true" />
-                <element signature="e#281#282#0" expanded="true" />
+                <element signature="e#459#460#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Util.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="102">
+              <caret line="6" column="68" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -93,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WheelValues.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="69" selection-start-line="7" selection-start-column="69" selection-end-line="7" selection-end-column="69" />
+            <state relative-caret-position="102">
+              <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="7" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -129,11 +140,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/InvalidInputException.java" />
         <option value="$PROJECT_DIR$/src/Puzzle.java" />
-        <option value="$PROJECT_DIR$/src/FunctionDefinitionsTest.java" />
-        <option value="$PROJECT_DIR$/src/FunctionDefinitions.java" />
-        <option value="$PROJECT_DIR$/src/Wheel.java" />
         <option value="$PROJECT_DIR$/src/WheelValues.java" />
         <option value="$PROJECT_DIR$/src/Util.java" />
+        <option value="$PROJECT_DIR$/src/Wheel.java" />
+        <option value="$PROJECT_DIR$/src/FunctionDefinitions.java" />
+        <option value="$PROJECT_DIR$/src/FunctionDefinitionsTest.java" />
       </list>
     </option>
   </component>
@@ -158,6 +169,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -174,7 +186,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -229,41 +240,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FunctionDefinitionsTest.checkGuessInvalidInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FunctionDefinitionsTest.calculateChangeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wheel-of-fortune" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FunctionDefinitionsTest" />
-      <option name="METHOD_NAME" value="checkGuessInvalidInput" />
+      <option name="METHOD_NAME" value="calculateChangeTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FunctionDefinitionsTest.checkGuessTestNullPointer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FunctionDefinitionsTest.parseWheelValuesInvalidInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wheel-of-fortune" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FunctionDefinitionsTest" />
-      <option name="METHOD_NAME" value="checkGuessTestNullPointer" />
+      <option name="METHOD_NAME" value="parseWheelValuesInvalidInput" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FunctionDefinitionsTest.numberOfOccurancesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FunctionDefinitionsTest.parseWheelValuesNullPointer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wheel-of-fortune" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FunctionDefinitionsTest" />
-      <option name="METHOD_NAME" value="numberOfOccurancesTest" />
+      <option name="METHOD_NAME" value="parseWheelValuesNullPointer" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FunctionDefinitionsTest.spinWheelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FunctionDefinitionsTest.parseWheelValuesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wheel-of-fortune" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FunctionDefinitionsTest" />
-      <option name="METHOD_NAME" value="spinWheelTest" />
+      <option name="METHOD_NAME" value="parseWheelValuesTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -272,10 +283,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.FunctionDefinitionsTest" />
-        <item itemvalue="JUnit.FunctionDefinitionsTest.numberOfOccurancesTest" />
-        <item itemvalue="JUnit.FunctionDefinitionsTest.checkGuessInvalidInput" />
-        <item itemvalue="JUnit.FunctionDefinitionsTest.checkGuessTestNullPointer" />
-        <item itemvalue="JUnit.FunctionDefinitionsTest.spinWheelTest" />
+        <item itemvalue="JUnit.FunctionDefinitionsTest.calculateChangeTest" />
+        <item itemvalue="JUnit.FunctionDefinitionsTest.parseWheelValuesTest" />
+        <item itemvalue="JUnit.FunctionDefinitionsTest.parseWheelValuesInvalidInput" />
+        <item itemvalue="JUnit.FunctionDefinitionsTest.parseWheelValuesNullPointer" />
       </list>
     </recent_temporary>
   </component>
@@ -293,48 +304,50 @@
       <workItem from="1559735390833" duration="8257000" />
       <workItem from="1559755112670" duration="6027000" />
       <workItem from="1559823610828" duration="13539000" />
+      <workItem from="1559909600807" duration="9484000" />
+      <workItem from="1560014307713" duration="5207000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FunctionDefinitionsTest_checkGuessTestNullPointer - 2019.06.05 at 11h 49m 23s.xml">
-      <configuration name="FunctionDefinitionsTest.checkGuessTestNullPointer" configurationId="JUnit" />
+    <history-entry file="FunctionDefinitionsTest_parseWheelValuesInvalidInput - 2019.06.07 at 13h 49m 44s.xml">
+      <configuration name="FunctionDefinitionsTest.parseWheelValuesInvalidInput" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionDefinitionsTest_spinWheelTest - 2019.06.05 at 11h 50m 29s.xml">
-      <configuration name="FunctionDefinitionsTest.spinWheelTest" configurationId="JUnit" />
+    <history-entry file="FunctionDefinitionsTest_parseWheelValuesInvalidInput - 2019.06.07 at 13h 54m 55s.xml">
+      <configuration name="FunctionDefinitionsTest.parseWheelValuesInvalidInput" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionDefinitionsTest_checkGuessTestNullPointer - 2019.06.05 at 11h 50m 35s.xml">
-      <configuration name="FunctionDefinitionsTest.checkGuessTestNullPointer" configurationId="JUnit" />
+    <history-entry file="FunctionDefinitionsTest_parseWheelValuesTest - 2019.06.07 at 13h 55m 06s.xml">
+      <configuration name="FunctionDefinitionsTest.parseWheelValuesTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionDefinitionsTest_checkGuessInvalidInput - 2019.06.05 at 11h 50m 46s.xml">
-      <configuration name="FunctionDefinitionsTest.checkGuessInvalidInput" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FunctionDefinitionsTest - 2019.06.05 at 13h 08m 19s.xml">
+    <history-entry file="FunctionDefinitionsTest - 2019.06.08 at 14h 52m 18s.xml">
       <configuration name="FunctionDefinitionsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionDefinitionsTest_numberOfOccurancesTest - 2019.06.05 at 16h 18m 06s.xml">
-      <configuration name="FunctionDefinitionsTest.numberOfOccurancesTest" configurationId="JUnit" />
+    <history-entry file="FunctionDefinitionsTest_calculateChangeTest - 2019.06.08 at 15h 00m 06s.xml">
+      <configuration name="FunctionDefinitionsTest.calculateChangeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionDefinitionsTest_numberOfOccurancesTest - 2019.06.05 at 16h 21m 39s.xml">
-      <configuration name="FunctionDefinitionsTest.numberOfOccurancesTest" configurationId="JUnit" />
+    <history-entry file="FunctionDefinitionsTest_calculateChangeTest - 2019.06.08 at 15h 09m 34s.xml">
+      <configuration name="FunctionDefinitionsTest.calculateChangeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionDefinitionsTest_numberOfOccurancesTest - 2019.06.05 at 16h 22m 24s.xml">
-      <configuration name="FunctionDefinitionsTest.numberOfOccurancesTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FunctionDefinitionsTest - 2019.06.05 at 16h 22m 51s.xml">
+    <history-entry file="FunctionDefinitionsTest - 2019.06.08 at 15h 10m 08s.xml">
       <configuration name="FunctionDefinitionsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionDefinitionsTest - 2019.06.05 at 16h 28m 32s.xml">
+    <history-entry file="FunctionDefinitionsTest_calculateChangeTest - 2019.06.08 at 15h 18m 40s.xml">
+      <configuration name="FunctionDefinitionsTest.calculateChangeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FunctionDefinitionsTest_calculateChangeTest - 2019.06.08 at 15h 18m 51s.xml">
+      <configuration name="FunctionDefinitionsTest.calculateChangeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FunctionDefinitionsTest - 2019.06.08 at 15h 19m 16s.xml">
       <configuration name="FunctionDefinitionsTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29794000" />
+    <option name="totallyTimeSpent" value="44485000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26177174" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27134877" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -345,19 +358,19 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32736155" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39739415" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32899022" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32899022" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24980047" />
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
@@ -413,10 +426,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Puzzle.java">
+    <entry file="file://$PROJECT_DIR$/src/Util.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+        <state relative-caret-position="102">
+          <caret line="6" column="68" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WheelValues.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="7" selection-end-column="69" />
         </state>
       </provider>
     </entry>
@@ -428,45 +448,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FunctionDefinitionsTest.java">
+    <entry file="file://$PROJECT_DIR$/src/Puzzle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="204" column="82" selection-start-line="204" selection-start-column="82" selection-end-line="204" selection-end-column="82" />
+        <state relative-caret-position="164">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FunctionDefinitions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="67" column="29" lean-forward="true" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Wheel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+        <state relative-caret-position="238">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
-            <element signature="e#255#256#0" expanded="true" />
-            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WheelValues.java">
+    <entry file="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/org/junit/Assert.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FunctionDefinitions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="69" selection-start-line="7" selection-start-column="69" selection-end-line="7" selection-end-column="69" />
+        <state relative-caret-position="258">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util.java">
+    <entry file="file://$PROJECT_DIR$/src/FunctionDefinitionsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="3842">
+          <caret line="226" column="75" selection-start-line="226" selection-start-column="75" selection-end-line="226" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

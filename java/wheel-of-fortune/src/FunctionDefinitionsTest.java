@@ -75,6 +75,33 @@ public class FunctionDefinitionsTest {
         }
     }
 
+    //parseWheelValues()
+    @Test(expected = NullPointerException.class)
+    public void parseWheelValuesNullPointer() throws InvalidInputException {
+        String[][][] testingElements = {null,{null},{{null}},{{"500"},{"Bankrupt",null,"Bankrupt"}}};
+        for (String[][] array: testingElements) {
+            Util.parseWheelValues(array);
+        }
+    }
+
+    @Test(expected = InvalidInputException.class)
+    public void parseWheelValuesInvalidInput() throws InvalidInputException {
+        String[][] testingElements = { {"600"},{"500"},{"Bankrupt","10000","Bankrupt"}};
+        Util.parseWheelValues(testingElements);
+    }
+
+    @Test
+    public void parseWheelValuesTest() throws InvalidInputException {
+        String[][] wheel = {{"900"},{"Bankrupt"},{"2500"},{"500"},{"600"},{"700"},
+                {"600"},{"650"},{"500"},{"700"},
+                {"Bankrupt","1000000","Bankrupt"},{"600"},{"550"},{"500"},
+                {"600"},{"Bankrupt"},{"650"},{"500"},{"700"},
+                {"Lose a Turn"}, {"800"},{"500"},{"650"},{"500"},{"900"}};
+        String[] values = {"900","Bankrupt","2500","500","600","700","650","1000000","550",
+                            "Lose a Turn","800"};
+        assertArrayEquals(values,Util.parseWheelValues(wheel));
+    }
+
     //calculateChange()
     @Test(expected = NullPointerException.class)
     public void calculateChangeNullPointer() throws InvalidInputException {
@@ -195,19 +222,40 @@ public class FunctionDefinitionsTest {
                                 "Lose a Turn","900"};
         String guess = null;
         String value = null;
+
+        int[] consonantOneTime = {0,2500,500,600,700,650,0,550,800,0,900};
+        int[] consonantTwoTime = {0,5000,1000,1200,1400,1300,0,1100,1600,0,1800};
+        int vowel = -250;
+        int notInPuzzle = 0;
+
         try{
             for (int g = 0; g < guesses.length; g++) {
                 guess = guesses[g];
                 for (int v = 0; v < wheelValues.length; v++) {
                     value = wheelValues[v];
-                    FunctionDefinitions.calculateChange(guess,
+                    int result = FunctionDefinitions.calculateChange(guess,
                                         FunctionDefinitions.numberOfOccurances(guess,Puzzle.MOVIE_QUOTE),
                                         value,Puzzle.MOVIE_QUOTE,Wheel.ROUND_ONE);
+                    if (guess.matches("[noiamyurftheNOIAMYURFTHE]")) {
+
+                        if (guess.compareToIgnoreCase("r") == 0) {
+                            assertEquals(consonantTwoTime[v],result);
+                            continue;
+                        }
+                        if (guess.matches("[aeiouAEIOU]")) {
+                            assertEquals(vowel,result);
+                        } else { // i.e. its a consonant with one letter in the puzzle
+                            assertEquals(consonantOneTime[v],result);
+                        }
+                    } else {
+                        assertEquals(notInPuzzle,result);
+                    }
                 }
             }
         } catch (InvalidInputException e) {
             e.printStackTrace();
         }
     }
+
 
 }

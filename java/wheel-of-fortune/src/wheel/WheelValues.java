@@ -1,3 +1,5 @@
+package wheel;
+
 public interface WheelValues {
     String[][] ROUND_ONE_WHEEL = {{"900"},{"Bankrupt"},{"2500"},{"500"},{"600"},{"700"},
             {"600"},{"650"},{"500"},{"700"},

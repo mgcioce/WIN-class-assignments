@@ -1,4 +1,11 @@
 
+import contestant.Contestant;
+import puzzle.Puzzle;
+import util.InvalidInputException;
+import util.Util;
+import wheel.Wheel;
+
+import java.util.Objects;
 import java.util.Random;
 
 public class FunctionDefinitions {
@@ -45,8 +52,8 @@ public class FunctionDefinitions {
         return num;
     }
 
-    public static int calculateChange(String guess,int num,
-                                      String value,Puzzle puzzle,Wheel wheel)
+    public static int calculateChange(String guess, int num,
+                                      String value, Puzzle puzzle, Wheel wheel)
                                         throws InvalidInputException {
         if (guess.matches("[^a-zA-Z]")) {
             throw new InvalidInputException("the guess must be an english alphabet character");
@@ -102,5 +109,40 @@ public class FunctionDefinitions {
         }
 
     }
+
+//    public static void modifyAccount(Contestant contestant, int modValue) throws InvalidInputException{
+//        if (!contestant.isContestantsTurn()) {
+//            throw new InvalidInputException("it is not this contestants turn");
+//        }
+//        if (Objects.isNull(contestant.getName()) || Objects.isNull(contestant.getPosition())) {
+//            throw new InvalidInputException("This contestant is not created correctly");
+//        }
+//        if (modValue < -250 || (modValue > -250 && modValue < 0) ||
+//                (modValue > 0 && modValue < 500)) {
+//            throw new InvalidInputException("the mod value is not valid");
+//        }
+//        int testValue;
+//        boolean valid = false;
+//        for (String s: Util.POSSIBLE_WHEEL_VALUES) {
+//            if (s.compareTo("Bankrupt") == 0 || s.compareTo("Lose a Turn") == 0 ||
+//                    s.compareTo("1000000") == 0) {
+//                continue;
+//            } else {
+//                testValue = Integer.parseInt(s);
+//            }
+//            if (modValue == 0) {
+//                valid = true;
+//                break;
+//            }
+//            if ((modValue % testValue) == 0) {
+//                valid = true;
+//                break;
+//            }
+//        }
+//        if (!valid) {
+//            throw new InvalidInputException("the mod value is not valid");
+//        }
+//        contestant.setRoundEarnings(contestant.getRoundEarnings() + modValue);
+//    }
 
 }

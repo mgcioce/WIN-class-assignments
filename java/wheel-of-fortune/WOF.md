@@ -1,5 +1,5 @@
 # Game Play
-The following is just a short little description of Wheel of Fortune.
+The following is just a short little description of wheel.Wheel of Fortune.
 
 # Game Basics
 
@@ -42,7 +42,7 @@ The following is just a short little description of Wheel of Fortune.
   - A player, on their turn, has four options
     quit the game solve the puzzle spin the wheel buy a vowel
 
-# Trying To Solve A Puzzle
+# Trying To Solve A puzzle.Puzzle
 
   - If a player chooses to solve the puzzle, then they are given a chance to guess what the complete puzzle is.
   - If the player guesses incorrectly, the player's turn is over.
@@ -75,8 +75,8 @@ To begin the game, you will prompt for the names of 2 files: a wheel configurati
 
 A specified file format has been provided for you. You can view Samples for each format. These are only samples! We will be using many files of the same format to test your programs. You will want to create your own specialized wheel and puzzle files to test different aspects of your game play.
 
-Puzzle List - The first line in this file indicates the number puzzles contained in the file.
-Wheel configuration file - The first line in this file indicates the number of wheel values contained in the file.
+puzzle.Puzzle List - The first line in this file indicates the number puzzles contained in the file.
+wheel.Wheel configuration file - The first line in this file indicates the number of wheel values contained in the file.
 
 # Files
 
@@ -88,7 +88,7 @@ If, for any reason, the files that your program attempt to read in are in an inc
 
 # Players
 
-Every Wheel of Fortune game will have three players. Prompt for the names of these players, and then begin the game. 
+Every wheel.Wheel of Fortune game will have three players. Prompt for the names of these players, and then begin the game. 
 
 # Menu Options
 

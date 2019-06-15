@@ -1,3 +1,9 @@
+package wheel;
+
+import util.Util;
+
+import java.util.Random;
+
 public enum Wheel {
 
 
@@ -19,6 +25,16 @@ public enum Wheel {
 
     public String[] getWheelValues() {
         return this.wheelValues;
+    }
+
+    public String spinWheel() {
+        Random random = new Random();
+        String[] value  = wheel[random.nextInt(wheel.length)];
+        if (value.length > 1) {
+            return value[random.nextInt(value.length)];
+        } else {
+            return value[0];
+        }
     }
 
 }

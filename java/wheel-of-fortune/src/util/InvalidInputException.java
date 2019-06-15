@@ -1,3 +1,5 @@
+package util;
+
 public class InvalidInputException extends Exception{
 
     private String message;
@@ -8,6 +10,6 @@ public class InvalidInputException extends Exception{
 
     @Override
     public String toString() {
-        return "InvalidInputException: " + message;
+        return "util.InvalidInputException: " + message;
     }
 }
